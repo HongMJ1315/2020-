@@ -1,3 +1,5 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="javascript">
@@ -31,14 +33,15 @@
 		var fullYear=365*24*60*60;
 		var NowSecond=(daysum[mo]*24*60*60+(date-1)*24*60*60+h*60*60+m*60+s+ss);
 		var nowSecond=daysum[mo]*24*60*60+(date-1)*24*60*60+h*60*60+m*60+s;
-		document.getElementById('NowYear').innerHTML ="<p><span style='font-size:30px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+ y +"§wπL§F</span></span></p>";
+		document.getElementById('NowYear').innerHTML ="<p><span style='font-size:30px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+ y +"Â∑≤ÈÅé‰∫Ü</span></span></p>";
 		document.getElementById('showbox').innerHTML ="<p style='text-align: center;'><span style='font-size:20px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+ (NowSecond /fullYear)*100 + "%</span></span></p>";
-		document.getElementById('showsecond').innerHTML ="<p style='text-align: center;'><span style='font-size:20px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+ NowSecond +"¨Ì</span></span></p>";
-		document.getElementById('down').innerHTML ="<p style='text-align: center;'><span style='font-size:20px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>¬˜"+ (y+1) +"¡Ÿ¶≥"+ (fullYear-nowSecond) +"¨Ì</span></span></p>";
+		document.getElementById('showsecond').innerHTML ="<p style='text-align: center;'><span style='font-size:20px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+ NowSecond +"Áßí</span></span></p>";
+		document.getElementById('down').innerHTML ="<p style='text-align: center;'><span style='font-size:20px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>Èõ¢"+ (y+1) +"ÈÇÑÊúâ"+ (fullYear-nowSecond) +"Áßí</span></span></p>";
 		setTimeout('ShowTime()',1);
 	}
 	
 </script>
+</head>
 <body onload="ShowTime()">
 <div id="NowYear"></div>
 <div id="showbox"></div>

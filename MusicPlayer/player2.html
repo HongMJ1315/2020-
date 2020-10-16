@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<p style='text-align: center;'><button onclick='play()' type='bottom'>換歌</button><button onclick='stop()' type='bottom'>停止</button></p>
+<script language="javascript" >
+	music = new Array(4);
+	namee = new Array(4);
+	music[0] = "music/反骨男孩-痘痘那邊.mp3";
+	namee[0] = "反骨男孩-痘痘那邊"
+	music[1] = "music/柯文哲-Do_thing_right.mp3";
+	namee[1] = "柯文哲-Do Thing Right"
+	music[2] = "music/Vicetone-Tremble.mp3"
+	namee[2] = "Vicetone - Tremble"
+	music[3] = "music/林俊傑-當你.mp3"
+	namee[3] = "林俊傑 - 當你"
+	index = Math.floor(Math.random() * namee.length);
+	document.write("<p style='text-align: center;'><span style='font-size:22px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>現在撥出：</span></span></p>")
+	function play(){
+		index = Math.floor(Math.random() * namee.length);
+		document.getElementById('nowsong').innerHTML ="<p style='text-align: center;' id='sn'><span style='font-size:22px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>"+namee[index]+"</span></span></p>"
+		document.getElementById('play').innerHTML ="<embed src=" + music[index] + " autostart=true hidden=true loop=true id='midis' volume=100%>";
+	}
+	function stop(){
+	document.getElementById('nowsong').innerHTML ="<p style='text-align: center;' id='sn'><span style='font-size:22px;'><span style='color:#FFFFFF;'><span style='background-color:#000000;'>現在啥都沒有</span></span></p>"
+		document.getElementById('play').innerHTML =""
+	}
+</script>
+<body onload="play()">
+<div id="nowsong"></div>
+<div id="play"></div>
+</body>
